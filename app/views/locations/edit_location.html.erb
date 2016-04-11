@@ -1,0 +1,11 @@
+<%= form_for, url update_location_path, method: 'post' do |f| %>
+    <%= label(:name, 'Name') %>
+    <%= text_field(:name) %>
+    <br>
+    <%= label(:description, 'Description') %>
+    <%= text_field(:description) %>
+    <br>
+    <%= label(:coordinates, 'Coordinates') %>
+    <%= text_field(:coordinates) %>
+    <%= submit('Submit') %>
+<% end %>

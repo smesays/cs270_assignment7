@@ -1,0 +1,11 @@
+<%= form_for, url update_user_path, method: 'post' do |f| %>
+    <%= label(:first_name, 'First Name') %>
+    <%= text_field(:first_name) %>
+    <br>
+    <%= label(:last_name, 'Last Name') %>
+    <%= text_field(:last_name) %>
+    <br>
+    <%= label(:email, 'E-mail') %>
+    <%= text_field(:email) %>
+    <%= submit('Submit') %>
+<% end %>

@@ -1,0 +1,15 @@
+<%= form_for, url update_event_path, method: 'post' do |f| %>
+    <%= label(:name, 'Name') %>
+    <%= text_field(:name) %>
+    <br>
+    <%= label(:description, 'Description') %>
+    <%= text_field(:description) %>
+    <br>
+    <%= label(:start_date, 'Starts on') %>
+    <%= text_field(:start_date) %>
+    <br>
+    <%= label(:end_date, 'Ends on') %>
+    <%= text_field(:end_date) %>
+    <br>
+    <%= submit('Submit') %>
+<% end %>
